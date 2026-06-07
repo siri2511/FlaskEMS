@@ -1,0 +1,36 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.skills {
+  display: inline-block;
+  width: 100%;
+  margin-top: 2%;
+}
+button {
+  background-color: #8ebf42;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  padding: 16px 0;
+  text-align: left;
+}

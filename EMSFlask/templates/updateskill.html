@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Management System</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}"/>
+    </head>
+    <body>
+        <form method='POST' action=''>
+            {{csrf_token }}
+            <h1>Update Skill Set</h1>
+            <hr/>
+            <div class='container'>
+                <label for='email'><strong>Email ID</strong></label>
+                <input type='text' placeholder='Enter Email ID' name='email' required />
+                <strong> Choose your python expertise skills<strong><br />
+                <div class='skills'>
+                    <input type='checkbox' name='skills' value='WebDevelopment' />Web Development
+                </div>
+                <div class='skills'>
+                    <input type='checkbox' name='skills' value='Machine Learning' />Machine Learning
+                </div>
+                <div class='skills'>
+                    <input type='checkbox' name='skills' value='Data Science' />Data Science
+                </div>
+                <div class='skills'>
+                    <input type='checkbox' name='skills' value='Image Processing' />Image Processing
+                </div>
+            </div>
+            <button type='submit'> Update </button>
+        </form>
+    </body>
+</html>
